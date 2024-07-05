@@ -2,7 +2,10 @@
   border: 1px solid white;
 }
 .active {
-  transform: scale(1.2);
+  transform: scale(1.04);
+  box-shadow: 5px 5px 5px rgb(101, 101, 101);
+  position: relative;
+  z-index: 10;
 }
 .title {
   border-bottom: 1px solid white;
@@ -31,10 +34,10 @@
   color: rgb(126, 126, 126);
 }
 .blue {
-  background-color: rgb(35, 155, 171);
+  background-color: rgba(35, 155, 171);
 }
-.lightblue {
-  background-color: rgb(44, 193, 213);
+.price_tag {
+  opacity: 0.8;
 }
 .green {
   background-color: rgb(31, 137, 114);
