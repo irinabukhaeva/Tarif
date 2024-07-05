@@ -1,7 +1,7 @@
 import style from "./Cards.module.css"
 
 export default function Cards(props) {
-  const {title, price,speed, description, id} = props.item
+  const {title, price,speed, description, id, state} = props.item
 
 const getColorTitle = () => {
   switch (id) {
@@ -19,18 +19,18 @@ const getColorPrice = () => {
     default: return style.lightgraphite;
   }
 }
-  return (
-        <div className={style.card}>
-      <div className ={style.title+" "+getColorTitle()}>{title}</div>
-      
-        <div className={style.price_tag+" "+getColorPrice()}>
-          <p className={style.rub}>руб</p>
-          <p className= {style.price}>{price}</p>
-          <p className={style.mes}>/мес</p>
-        </div>
-        <p className= {style.speed}>{speed}</p>
-        <p className= {style.description}>{description}</p>
-      
-    </div>
+  return (        
+          <div className={state}>
+            <div className={style.card}>
+              <div className ={style.title+" "+getColorTitle()}>{title}</div>
+              <div className={style.price_tag+" "+getColorPrice()}>
+                <p className={style.rub}>руб</p>
+                <p className= {style.price}>{price}</p>
+                <p className={style.mes}>/мес</p>
+              </div>
+              <div className= {style.speed}>{speed}</div>
+              <div className= {style.description}>{description}</div>
+            </div>
+          </div>        
   )
 }
