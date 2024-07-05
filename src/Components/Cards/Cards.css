@@ -1,5 +1,5 @@
 .card {
-  border: 1px solid white;
+  margin: 2%;
 }
 .active {
   transform: scale(1.04);
@@ -13,6 +13,7 @@
   font-weight: 300;
   color: white;
   height: 50px;
+  align-content: center;
 }
 .price_tag {
   height: 100px;
@@ -27,33 +28,26 @@
 .speed {
   height: 50px;
   color: rgb(126, 126, 126);
+  align-content: center;
 }
 .description {
   height: 50px;
   background-color: rgb(238, 238, 238);
   color: rgb(126, 126, 126);
-}
-.blue {
-  background-color: rgba(35, 155, 171);
+  align-content: center;
 }
 .price_tag {
   opacity: 0.8;
 }
+.blue {
+  background-color: rgba(35, 155, 171);
+}
 .green {
   background-color: rgb(31, 137, 114);
-}
-.lightgreen {
-  background-color: rgb(36, 174, 141);
 }
 .red {
   background-color: rgb(198, 83, 76);
 }
-.lightred {
-  background-color: rgb(244, 106, 95);
-}
 .graphite {
   background-color: rgb(40, 47, 55);
-}
-.lightgraphite {
-  background-color: rgb(51, 58, 68);
 }

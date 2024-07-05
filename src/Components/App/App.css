@@ -6,5 +6,5 @@
   display: flex;
   width: 100%;
   text-align: center;
-  margin-top: 10%;
+  justify-content: center;
 }
